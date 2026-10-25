@@ -1,0 +1,21 @@
+// src/config/env.ts
+import "dotenv/config";
+
+function getEnv(key: string, fallback?: string): string {
+  const value = process.env[key] ?? fallback;
+  if (value === undefined) {
+    throw new Error(`Missing required environment variable: ${key}`);
+  }
+  return value;
+}
+
+
+
+export const env = {
+  port: Number(getEnv("PORT", "5000")),
+  databaseUrl: getEnv("DATABASE_URL"),
+  jwtSecret: getEnv("JWT_SECRET"),
+  jwtExpiresIn: getEnv("JWT_EXPIRES_IN", "7d"),
+  nodeEnv: getEnv("NODE_ENV", "development"),
+  clientUrl: getEnv("CLIENT_URL", "http://localhost:3000"),
+};
