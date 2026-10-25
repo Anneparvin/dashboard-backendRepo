@@ -17,5 +17,5 @@ export const env = {
   jwtSecret: getEnv("JWT_SECRET"),
   jwtExpiresIn: getEnv("JWT_EXPIRES_IN", "7d"),
   nodeEnv: getEnv("NODE_ENV", "development"),
-  clientUrl: getEnv("CLIENT_URL", "http://localhost:3000"),
+  clientUrl: getEnv("CLIENT_URL", "https://dashboard-backend-repo-ndpp-iota.vercel.app"),
 };

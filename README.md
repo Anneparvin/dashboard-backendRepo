@@ -4,8 +4,7 @@ A role-based project submission and review platform built as a task assessment.
 
 ## 🔗 Live Links
 
-- **Live Site:** https://<your-app>.vercel.app
-- **Backend API:** https://<your-api>.onrender.com
+- **Live Site:** https://dashboard-backend-repo.vercel.app
 - **Backend Repo:** https://github.com/Anneparvin/dashboard-backendRepo
 
 > The backend runs on a free plan and may take 30-60 seconds to wake up on the first request.
